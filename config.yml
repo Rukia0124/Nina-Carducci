@@ -1,0 +1,16 @@
+defaults:
+  - scope:
+      path: ""
+      type: "html"
+    values:
+      max-age: 86400
+  - scope:
+      path: ""
+      type: "css"
+    values:
+      max-age: 604800
+  - scope:
+      path: ""
+      type: "js"
+    values:
+      max-age: 604800
