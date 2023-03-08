@@ -41,7 +41,8 @@ body {
 }
 
 .social-link img {
-	width: 20px
+	width: 20px;
+	height: 20px;
 }
 
 #about {
@@ -107,9 +108,9 @@ body {
 
 .nav-pills .nav-link.active-tag,
 .nav-pills .show>.nav-link {
-	background-color: #BEB45A;
+	background-color: #9d9236;
 	border-radius: 0;
-	color: #fff
+	color: #000
 }
 
 .nav-pills .nav-link {
