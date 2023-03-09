@@ -116,31 +116,31 @@
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item"
+				<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
 					alt="Photo d'un concert d'Aaron Paul pris depuis la fosse" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
+				<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/entreprise/ali-morshedlou-wmd64tmfc4k-unsplash.webp"
 					alt="Portrait d'un homme, Ali Morshedlou, bras croisés, en costume" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
+				<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
 					alt="Photo d'une collaboratrice souriante lors d'une réunion en entreprise" />
-				<img data-gallery-tag="Mariages" class="gallery-item"
+				<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
 					alt="Photo des mains d'un jeune couple marié tendues les unes vers les autres" />
-				<img data-gallery-tag="Portrait" class="gallery-item"
+				<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/portraits/ade-tunji-rvkhwwzfatq-unsplash.webp"
 					alt="Portrait d'un homme, Ade Tunji, tête baissée et fermant les yeux" />
-				<img data-gallery-tag="Mariages" class="gallery-item"
+				<img data-gallery-tag="Mariages" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/mariage/jakob-owens-siniljkxhmc-unsplash.webp"
 					alt="Photo d'un couple fraîchement marié souriants dans la nature" />
-				<img data-gallery-tag="Portrait" class="gallery-item"
+				<img data-gallery-tag="Portrait" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/portraits/nino-van-prattenburg - 443cl1uR_8-unsplash.webp"
 					alt="Portrait d'une femme, Nino Van Prattenburg, le regard pensif" />
-				<img data-gallery-tag="Concert" class="gallery-item"
+				<img data-gallery-tag="Concert" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.jpg"
 					alt="Photo d'un chanteur, Austin Neill, sur scène en plein concert" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
+				<img data-gallery-tag="Entreprises" class="gallery-item" loading="lazy"
 					src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
 					alt="Photo d'une collaborarice en entreprise, devant son ordinateur, riant" />
 			</div>
@@ -204,7 +204,7 @@
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
 	</div>
-	<section id="contact">
+	<footer id="contact">
 		<div class="container">
 			<div class="form-container">
 				<h2>Une question ? Une demande de devis ?</h2>
@@ -223,35 +223,49 @@
 				<img src="./assets/images/camera.webp" alt="Photo artistique d'un appareil photo">
 			</div>
 		</div>
-
-	</section>
-	<footer>
-		<div itemscope itemtype="http://schema.org/Photograph">
-			<span itemprop="name">Nina Carducci</span>
-			<div itemprop="description">Photographe professionnelle à Bordeaux et en Île-de-France.</div>
-			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-				<span itemprop="streetAddress">68 avenue Alsace-Lorraine</span>
-				<span itemprop="postalCode">33200</span>
-				<span itemprop="addressLocality">Bordeaux</span>
-			</div>
-			<div>Informations ou prise de rendez-vous par téléphone du lundi au vendredi, de 10h à 19h.</div>
-			<span itemprop="telephone">05 56 67 78 89</span>
-			<div itemprop="openingHoursSpecification" itemscope itemtype="http://schema.org/OpeningHoursSpecification">
-				<meta itemprop="dayOfWeek" content="Monday">
-				<meta itemprop="dayOfWeek" content="Tuesday">
-				<meta itemprop="dayOfWeek" content="Wednesday">
-				<meta itemprop="dayOfWeek" content="Thursday">
-				<meta itemprop="dayOfWeek" content="Friday">
-				<meta itemprop="opens" content="10:00">
-				<meta itemprop="closes" content="19:00">
-			</div>
-		</div>
 	</footer>
+
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js"></script>
 	<script src="./assets/scripts.js"></script>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": ["LocalBusiness", "Service"],
+			"name": "Nina Carducci",
+			"description": "Nina Carducci, photographe professionnelle à Bordeaux",
+			"image": "https://ninacarducci.netlify.app/assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp",
+			"url": "https://ninacarducci.netlify.app/",
+			"telephone": "0556677889",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "44.8466732",
+				"longitude": "-0.6065805"
+			},
+			"openingHoursSpecification": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": [
+					"lundi",
+					"mardi",
+					"mercredi",
+					"jeudi",
+					"vendredi"
+				],
+				"opens": "10:00",
+				"closes": "19:00"
+			},
+			"priceRange": "50€ - 400€"
+		}
+	</script>
 </body>
 
 </html>
